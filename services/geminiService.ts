@@ -15,8 +15,8 @@ const MEDICAL_IMAGES = [
 
 export const searchHospitals = async (filters: SearchFilters, userLocation?: { lat: number; lng: number }): Promise<{ hospitals: Hospital[]; rawText: string; sources: any[] }> => {
 
-  const API_KEY = "AIzaSyBPmyDA-gPULUR4jcQtBetd9MT8bAUpCdQ";
-  const ai = new GoogleGenAI({ apiKey: API_KEY });
+  // const API_KEY = "AIzaSyBPmyDA-gPULUR4jcQtBetd9MT8bAUpCdQ";
+  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
   // console.log("API KEY:", process.env.API_KEY);
   // console.log("ENV TYPE:", typeof window === "undefined" ? "server" : "client");
 
