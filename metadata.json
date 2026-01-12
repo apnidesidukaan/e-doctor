@@ -1,0 +1,7 @@
+{
+  "name": "Hospi - Your Healthcare Navigator",
+  "description": "Find and compare hospitals near you with specialized services. Get real-time information and location-based results using Gemini with Google Maps grounding.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
